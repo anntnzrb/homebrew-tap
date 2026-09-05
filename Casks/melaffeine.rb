@@ -1,6 +1,6 @@
 cask "melaffeine" do
-  version "0.1.2"
-  sha256 "f6e9ed1eb872fa13686ab0d807e539bccd91e1b80675c56091f0e805924cb878"
+  version "0.1.3"
+  sha256 "7a58ca5a2a4258b7bc501f6db797f499c32f3012a40b51309b2c4c96657aea50"
 
   url "https://github.com/anntnzrb/Melaffeine/releases/download/v#{version}/Melaffeine-aarch64-apple-darwin.zip"
   name "Melaffeine"
@@ -11,6 +11,7 @@ cask "melaffeine" do
   depends_on arch: :arm64
 
   app "Melaffeine.app"
+  binary "melaffeine"
 
   zap trash: [
     "~/Library/Caches/Melaffeine",
