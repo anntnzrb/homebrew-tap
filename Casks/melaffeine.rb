@@ -7,7 +7,7 @@ cask "melaffeine" do
   desc "Tiny native macOS menu-bar utility to prevent sleep"
   homepage "https://github.com/anntnzrb/Melaffeine"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
   depends_on arch: :arm64
 
   app "Melaffeine.app"
