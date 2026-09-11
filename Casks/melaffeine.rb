@@ -13,6 +13,15 @@ cask "melaffeine" do
   app "Melaffeine.app"
   binary "melaffeine"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Melaffeine.app"],
+                   sudo: false
+    system_command "/usr/bin/xattr",
+                   args: ["-d", "com.apple.quarantine", "#{staged_path}/melaffeine"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Caches/Melaffeine",
     "~/Library/Preferences/Melaffeine.plist",
