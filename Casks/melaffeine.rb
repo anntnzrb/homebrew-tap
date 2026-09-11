@@ -15,10 +15,12 @@ cask "melaffeine" do
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/Melaffeine.app"],
-                   sudo: false
+                   sudo: false,
+                   must_succeed: false
     system_command "/usr/bin/xattr",
                    args: ["-d", "com.apple.quarantine", "#{staged_path}/melaffeine"],
-                   sudo: false
+                   sudo: false,
+                   must_succeed: false
   end
 
   zap trash: [
