@@ -1,6 +1,6 @@
 cask "melaffeine" do
-  version "0.1.16"
-  sha256 "bf459d82b6ba2e77fff93ec23c1ba35860f0f124dc15f9cae06240d61559d5bb"
+  version "0.1.17"
+  sha256 "f399fd1e3c3a554a4c41c23d45161bb1e92ace16383cc6fbdb2f92a78c41026e"
 
   url "https://github.com/anntnzrb/Melaffeine/releases/download/v#{version}/Melaffeine-aarch64-apple-darwin.zip"
   name "Melaffeine"
